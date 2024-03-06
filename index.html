@@ -1,0 +1,93 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightcyan;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+        }
+       #menu ul{
+            list-style-type: decimal;
+            padding: 30px;
+            font-size: 16px;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My website</h1>
+    </header>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! Check out our latest technology images:</p>
+        <a href="https://unsplash.com/photos/macro-photography-of-black-circuit-board-FO7JIlwjOtU" target="_blank">
+            <img src="tech1.jpg" alt="Technology" style="max-width: 500px; height: auto;">
+    </a>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Explore our nature gallery:</p>
+        <div class="grid">
+            <a href="https://pixabay.com/photos/flowers-meadow-sunlight-summer-276014/" target="_blank">
+                <img src="nature 1.jpg" alt="Nature 1" style="max-width: 450px; height: auto;">
+            </a>
+            <a href="https://unsplash.com/photos/a-dirt-path-in-the-middle-of-a-forest-tqcbTXz_alI" target="_blank">
+                <img src="nature 2.jpg" alt="Nature 2" style="max-width: 450px; height: auto;">
+            </a>
+            <a href="https://unsplash.com/photos/gray-concrete-road-top-between-green-trees-vngzm4P2BTs" target="_blank">
+                <img src="nature 3.jpg" alt="Nature 3" style="max-width: 450px; height: auto;">
+            </a>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Check out our delicious food items:</p>
+        <ul>
+        <li>
+            <a href="https://media.istockphoto.com/id/1349383878/photo/hawaiian-pizza-with-ham-and-pineapple.jpg?s=2048x2048&w=is&k=20&c=L4iA6jWMAnbB3XycuXXPN0lvbRZDMJm2EH2eMl121_U=" target="_blank">
+                hawaiian-pizza-with-ham-and-pineapple
+                <br>
+            </a>
+        </li>
+        <li>
+            <a href="https://media.istockphoto.com/id/1211166193/photo/green-lettuce-salad-with-mixed-vegetables.jpg?s=2048x2048&w=is&k=20&c=mU01reYeG4DO342SXOsxl03bEyQ6Zc135BZIP0qPpEY=" target="_blank">
+                green-lettuce-salad-with-mixed-vegetables
+                <br>
+            </a>
+        </li>
+        <li>
+            <a href="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank">
+                sushi
+                <br>
+            </a>
+        </li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; This is the end of my webpage</p>
+    </footer>
+</body>
+</html>
